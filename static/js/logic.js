@@ -16,9 +16,7 @@ function createFeatures(earthquakeData) {
       "</h3><hr><p>" + new Date(feature.properties.time) + "</p>");
   }
 
-  // function radiusSize(depth) {
-  //   return depth * 20000;
-  // }
+  
   
   function radiusSize(depth) {
     if (depth <1) {
