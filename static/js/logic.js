@@ -22,19 +22,19 @@ function createFeatures(earthquakeData) {
 
   function circleColor(magnitude) {
     if (magnitude <1) {
-      return "rgb(255,255,178)"
+      return "#ffffb2"
     }
     else if (magnitude <2) {
-      return "rgb(254,204,92)"
+      return "#fecc5c"
     }
     else if (magnitude <3) {
-      return "rgb(253,141,60)"
+      return "#fd8d3c"
     }
     else if (magnitude <4) {
-      return "rgb(240,59,32)"
+      return "#f03b20"
     }
     else {
-      return "rgb(189,0,38)"
+      return "#bd0026"
     }
   }
 
@@ -115,11 +115,11 @@ function createMap(earthquakes) {
   }).addTo(myMap);
 
   function getColor(d) {
-    return d < 1 ? "rgb(255,255,178)" :
-           d < 2 ? "rgb(254,204,92)" :
-           d < 3 ? "rgb(253,141,60)" :
-           d < 4 ? "rgb(240,59,32)" :
-                   "rgb(189,0,38)";
+    return d < 1 ? "#ffffb2" :
+           d < 2 ? "#fecc5c" :
+           d < 3 ? "#fd8d3c" :
+           d < 4 ? "#f03b20" :
+                   "#bd0026";
       
   }
   var legend = L.control({position: "bottomright"});
