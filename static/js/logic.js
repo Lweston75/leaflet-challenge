@@ -145,7 +145,7 @@ function createMap(earthquakes) {
         grades = [0, 1, 2, 3, 4, 5],
         labels = []; 
 
-        div.innerHTML +='Magnitude<br><hr>'
+        div.innerHTML +='Magnitude Level<br><hr>'
     for (var i = 0; i < grades.length; i++) {
       div.innerHTML +=
         '<i style="background:' + getColor(grades[i] +1) + '">&nbsp&nbsp&nbsp</i> ' +
