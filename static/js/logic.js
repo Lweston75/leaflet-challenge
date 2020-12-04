@@ -16,8 +16,26 @@ function createFeatures(earthquakeData) {
       "</h3><hr><p>" + new Date(feature.properties.time) + "</p>");
   }
 
-  function radiusSize(magnitude) {
-    return magnitude * 20000;
+  // function radiusSize(depth) {
+  //   return depth * 20000;
+  // }
+  
+  function radiusSize(depth) {
+    if (depth <1) {
+      return depth * 10000
+    }
+    else if (depth <2) {
+      return depth * 17000
+    }
+    else if (depth <3) {
+      return depth * 19000
+    }
+    else if (depth <4) {
+      return depth * 21000
+    }
+    else {
+      return depth * 1000
+    }
   }
 
   function circleColor(magnitude) {
